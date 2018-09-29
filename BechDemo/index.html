@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!--
+1-
+Jquery is the base point were we got started
+-->
+
+
+    <script src="Scripts/jquery-1.12.4.min.js" type="text/javascript"></script>
+
+
+    <script src="Scripts/jquery.tmpl.min.js" type="text/javascript"></script>
+    <script src="Scripts/util.js" type="text/javascript"></script>
+<!--
+2-
+spinner splasher to display loading while page is in loading mode
+-->
+<style>
+   #spinner
+    {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(js/ajax-loader.gif) 50% 50% no-repeat #ede9df;
+    }
+</style>
+<style>
+#page_navigation a{
+	padding:3px;
+	border:1px solid gray;
+	margin:2px;
+	color:black;
+	text-decoration:none
+}
+.active_page{
+	background:darkblue;
+	color:white !important;
+}
+</style>
+
+<!--
+3-
+Loading the spinner on document preloading ... display loading notifier
+-->
+<!-- Preloader --><script type="text/javascript">// <![CDATA[
+$(window).load(function() { $("#spinner").fadeOut("slow"); })
+// ]]></script>
+
+
+
+
+
+
+
+
+
+
+<!--
+4-
+include the jquery template in order to work with and achieve seperation of data and html
+-->
+
+
+<!--
+5-
+include util function used for making the pagination of the template content and other javascript code injection
+-->
+
+
+
+
+<!--
+6-
+mian document loader for our page
+-->
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+
+
+//inject('tmpl/tmpl.php');//inject css for the pagination
+
+
+$('#atriclesTemplate').tmpl(articles).appendTo('#content');
+
+pagination();
+		
+		
+});
+</script>
+
+
+
+
+<!--
+7-
+define the main template for our articles
+-->
+<script id="atriclesTemplate" type="text/x-jquery-tmpl">
+<p>${title}</p>
+</script>
+
+
+
+</head>
+<body>
+
+
+<!--
+8-
+spinner location on at the first part of the body
+-->
+	<div id="spinner"></div>
+
+
+<!--9--->	
+	<!-- the input fields that will hold the variables we will use -->
+	<input type='hidden' id='current_page' />
+	<input type='hidden' id='show_per_page' />
+	
+	
+<!--10--->		
+	<!-- Content div. The child elements will be used for paginating(they don't have to be all the same,
+		you can use divs, paragraphs, spans, or whatever you like mixed together). '-->
+	<div id='content'>
+<p>static title for testing</p>
+	</div>
+	
+	
+	
+	
+	
+<!--11--->	
+	<!-- An empty div which will be populated using jQuery -->
+	<div id='page_navigation'></div>
+	
+
+
+
+
+	
+	
+</body>
+</html>

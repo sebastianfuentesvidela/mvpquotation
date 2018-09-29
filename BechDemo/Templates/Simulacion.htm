@@ -1,0 +1,135 @@
+﻿<div class="outerdiv" 
+    style="border: solid 1px black;  noheight: 500px; nomax-height: 95%; overflow: auto;">
+    <div style="float:right"><input type="image" src="Contents/img/imprime.gif"
+        onclick="printThisMe('#innerdiv')" />
+    </div>
+<div id="innerdiv">    
+Detalle de Márgenes y Límites para Cotizar:
+    {{if (bPuedeCotizar) }}
+            <img src="Contents/img/confirma.gif" />
+    {{else}}<img src="Contents/img/killmemo.gif" />
+    {{/if}}
+
+<br />
+<table>
+    <tr><td nowrap="nowrap"> Emisor: <span class="dato"> ${nombreCliente} </span></td>
+    <td nowrap="nowrap"> País:<span class="dato"> ${nombrePaisCliente} </span></td></tr>
+{{if (nombreMatriz) }}
+    <tr> <td nowrap="nowrap" colspan="2"> C.Matriz:  <span class="dato"> ${nombreMatriz} </span></td></tr>
+{{/if}}
+</table>
+<table><tr><td colspan="2" nowrap="nowrap"> Producto: <span class="dato"> ${tTipoProducto} </span><span class="dato"> ${nombreProducto} </span></td></tr>
+<tr><td nowrap="nowrap"> Monto Afecta Linea: <span class="dato"> ${nombreMonedaMonto} </span><span class="dato"> ${nicenum(dMontoOrigen)} </span></td> 
+    <td nowrap="nowrap"> Plazo Operación: <span class="dato"> ${iDiasPlazo} </span> Días</td></tr>
+<tr><td nowrap="nowrap"> Monto a Aplicar en Simulación: <span class="dato"> US$ ${nicenum(dMontoDolares)} </span></td>
+    <td nowrap="nowrap"> Plazo Habilitado:  <span class="dato"> ${lblDiasMaximo} </span> Días</td></tr>
+</table>
+{{if (iEsNotaEstruct) }}
+<table>
+<tr><td nowrap="nowrap"> Suby/Gar:  <span class="dato"> ${nombreDeudorSubyace} </span></td>
+    <td nowrap="nowrap"> País: <span class="dato"> ${nombrePaisSubyace} </span></td></tr>
+    <tr><td nowrap="nowrap" colspan="2">Monto Garantizado: <span class="dato"> ${porcento(sPorcGarantia)}% </span>
+     <span class="dato"> US$ ${nicenum(dMontoGarantia)} </span></td></tr>
+</table>
+<table><tr><td nowrap="nowrap"> Indirecto: <span class="dato"> ${tTipoProdSuby} </span><span class="dato"> ${nombreProductoSubyace} </span></td></tr>
+</table>
+{{/if}}
+<table style=" border: solid 1px black; "><tr>
+    <th nowrap="nowrap"> Tipo </th>
+    <th nowrap="nowrap"> Referencia </th>
+    <th nowrap="nowrap"> Acuerdo </th>
+    <th nowrap="nowrap"> Moneda </th>
+    <th nowrap="nowrap"> Valor Límite </th>
+    <th nowrap="nowrap"> Utilizado </th>
+    <th nowrap="nowrap"> Reservado </th>
+    <th nowrap="nowrap"> Disponible </th>
+    <th nowrap="nowrap"> Vig </th>
+</tr>
+<tbody>
+{{each listaafectados}}
+<tr style="background-color: ${BackColor}; color: {{if (Excedido) }} maroon; {{else}} black; {{/if}}">
+    <td nowrap="nowrap"> ${Severidad} </td>
+    <td> ${Nombre} </td>
+    <td nowrap="nowrap"> ${Acuerdo} </td>
+    <td nowrap="nowrap" style=" text-align:center;"> ${Moneda} </td>
+    <td nowrap="nowrap" style=" text-align:right;">&nbsp;${nicenum(Otorgado)}  </td>
+    <td nowrap="nowrap" style=" text-align:right;">&nbsp;${nicenum(Utilizado)}  </td>
+    <td nowrap="nowrap" style=" text-align:right;">&nbsp;<a href="javascript:showReserva('${LimKey}')">${nicenum(Reservado)}</a> </td>
+    <td nowrap="nowrap" style=" text-align:right;">&nbsp;${nicenum(Disponible)}  </td>
+    <td nowrap="nowrap" style=" text-align:center;">&nbsp;${Vigencia} </td>
+</tr>
+{{/each}}
+</tbody>
+</table>
+{{if (tPlzAcotado || tPlzRestringido) }}
+<table>
+    {{if (tPlzAcotado) }}
+        <tr>
+            <td nowrap="nowrap"> Plazo Acotado:  </td>
+            <td> <pre> ${tPlzAcotado} </pre></td>
+        </tr>
+    {{/if}}
+    {{if (tPlzRestringido) }}
+        <tr>
+            <td nowrap="nowrap"> Plazo Restringido: </td>
+            <td> <pre> ${tPlzRestringido} </pre></td>
+        </tr>
+    {{/if}}
+</table>
+{{/if}}
+
+{{if (tExedNormMsg || tExedPoliMsg) }}
+<table>
+    {{if (tExedNormMsg) }}
+        <tr>
+            <td nowrap="nowrap"> Normativos Sobrepasados:  <span class="dato"> ${iExedNorm} :</span>
+            </td>
+        <tr>
+        </tr>
+            <td> <pre> ${tExedNormMsg} </pre></td>
+        </tr>
+    {{/if}}
+    {{if (tExedPoliMsg) }}
+        <tr>
+            <td nowrap="nowrap"> Politicos Sobrepasados:  <span class="dato"> ${iExedPoli} :</span>
+            </td>
+        <tr>
+        </tr>
+            <td> <pre> ${tExedPoliMsg} </pre></td>
+        </tr>
+    {{/if}}
+</table>
+{{/if}}
+{{if (restricCliente.length > 0 || restricPais.length > 0) }}
+    {{if (restricCliente.length > 0) }}
+    <table>
+            <tr>
+                <td nowrap="nowrap"> Restricciones Cliente: </td>
+                <td class="scan">
+                {{each (restricCliente) }}
+                         <span> ${gls_dsc_rst} </span><br />
+                {{/each}}
+                 </td>
+            </tr>
+    </table>
+    {{/if}}
+    {{if (restricPais.length > 0) }}
+    <table>
+            <tr>
+                <td nowrap="nowrap"> Restricciones País:  
+                </td>
+                <td class="scan">
+                {{each (restricPais) }}
+                         <label> ${gls_dsc_rst} </label><br />
+                {{/each}}
+                 </td>
+            </tr>
+    </table>
+    {{/if}}
+{{/if}}
+
+    </div>
+</div>
+        <p style="text-align: right;">
+            <input type="checkbox" id="cheksimuliz" onclick="AcceptSimuliz(${bPuedeCotizar})" value="1" /><label
+                for="cheksimuliz">Acepta la Simulación</label></p>

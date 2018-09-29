@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>34150299-3720-4623-9173-757fdabf3e52</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>0in</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>0in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>1in</RightMargin>
+  <LeftMargin>1in</LeftMargin>
+  <BottomMargin>1in</BottomMargin>
+  <rd:ReportID>4695a65c-e132-4431-89e9-274485538012</rd:ReportID>
+  <DataSets>
+    <DataSet Name="Customers_DataTable1">
+      <Fields>
+        <Field Name="CustomerId">
+          <DataField>CustomerId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ContactName">
+          <DataField>ContactName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="City">
+          <DataField>City</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Country">
+          <DataField>Country</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Customers</rd:DataSetName>
+        <rd:TableName>DataTable1</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>6.75in</Width>
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>1.26984cm</Top>
+        <Width>2.53968cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.03175cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>nada</Value>
+      </Textbox>
+      <List Name="list1">
+        <ZIndex>2</ZIndex>
+        <DataSetName>Customers_DataTable1</DataSetName>
+        <ReportItems>
+          <Textbox Name="Country_1">
+            <rd:DefaultName>Country_1</rd:DefaultName>
+            <Width>3.1746cm</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13.33333cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!Country.Value</Value>
+          </Textbox>
+          <Textbox Name="City_1">
+            <rd:DefaultName>City_1</rd:DefaultName>
+            <Width>2.53968cm</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.47619cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!City.Value</Value>
+          </Textbox>
+          <Textbox Name="ContactName_2">
+            <rd:DefaultName>ContactName_2</rd:DefaultName>
+            <Width>4.7619cm</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.71429cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!ContactName.Value</Value>
+          </Textbox>
+          <Textbox Name="CustomerId">
+            <rd:DefaultName>CustomerId</rd:DefaultName>
+            <Width>5.07937cm</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <Label rd:LocID="a:">IDD dle Cliente</Label>
+            <CanGrow>true</CanGrow>
+            <Left>0.31746cm</Left>
+            <Height>0.63492cm</Height>
+            <Value>=Fields!CustomerId.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <Top>2.53968cm</Top>
+        <Width>16.8254cm</Width>
+        <Height>0.95238cm</Height>
+      </List>
+      <Textbox Name="ContactName">
+        <rd:DefaultName>ContactName</rd:DefaultName>
+        <Top>1.26984cm</Top>
+        <Width>3.80952cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.26984cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=First(Fields!ContactName.Value, "Customers_DataTable1")</Value>
+      </Textbox>
+      <Textbox Name="ContactName_1">
+        <rd:DefaultName>ContactName_1</rd:DefaultName>
+        <Top>2.53968cm</Top>
+        <Width>5.39683cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>5.71429cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=Fields!ContactName.Value</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>2in</Height>
+  </Body>
+  <Language>es-CL</Language>
+  <TopMargin>1in</TopMargin>
+  <PageHeight>100in</PageHeight>
+</Report>

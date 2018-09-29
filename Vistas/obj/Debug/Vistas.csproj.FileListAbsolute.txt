@@ -1,0 +1,15 @@
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Vistas\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Vistas\bin\Debug\Vistas.dll
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Vistas\bin\Debug\Vistas.pdb
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Vistas\obj\Debug\Vistas.dll
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Vistas\obj\Debug\Vistas.pdb
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Vistas\bin\Debug\Vistas.dll
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Vistas\bin\Debug\Vistas.pdb
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Vistas\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Vistas\obj\Debug\Vistas.dll
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Vistas\obj\Debug\Vistas.pdb
+C:\Sites\MVPQuotation\Vistas\bin\Debug\Vistas.dll
+C:\Sites\MVPQuotation\Vistas\bin\Debug\Vistas.pdb
+C:\Sites\MVPQuotation\Vistas\obj\Debug\ResolveAssemblyReference.cache
+C:\Sites\MVPQuotation\Vistas\obj\Debug\Vistas.dll
+C:\Sites\MVPQuotation\Vistas\obj\Debug\Vistas.pdb

@@ -1,0 +1,42 @@
+﻿<div class="outerdiv" 
+        style="border: solid 1px black;  height: auto; max-height: 95%; overflow: auto;">
+        <div style="float:right"><input type="image" src="Contents/img/imprime.gif"
+        onclick="printThisMe('#innerreserv')" /></div>
+  <div id="innerreserv">
+    Detalle de Cotizaciones que afectan al Límite junto a esta Cotización:<br />
+    <table>
+        <tr><td nowrap="nowrap"> Fecha: <span class="dato"> ${fecha} </span></td></tr>
+        <tr><td nowrap="nowrap"> Nombre:<span class="dato"> ${nombre} </span></td></tr>
+        <tr><td nowrap="nowrap"> Moneda:<span class="dato"> ${moneda} </span></td></tr>
+    </table>
+    {{if (vacio) }}
+        <p>${vacio}</p>
+    {{else}}
+        <table style=" border: solid 1px black; "><tr> 
+            <th> N° Cotización </th>
+            <th> Fecha Ingreso </th>
+            <th> Nombre Cliente </th>
+            <th> Tipo Producto </th>
+            <th> Monto </th>
+            <th> Operador </th>
+            <th> Vencimiento </th>
+        </tr>
+            <tbody>
+                {{each lista}}
+                <tr style=" {{if (fondo == '1') }} color: maroon; {{else}} background-color: white; {{/if}} ">
+                    <td nowrap="nowrap"> ${cotizacion} </td>
+                    <td nowrap="nowrap"> ${fechaIngreso} </td>
+                    <td> ${persona}  </td>
+                    <td nowrap="nowrap"> ${tipo} </td>
+                    <td nowrap="nowrap" 
+                        style=" text-align:right;">&nbsp;${nicenum(aplica)} </td>
+                    <td nowrap="nowrap" class="centrado"> ${operador} </td>
+                    <td nowrap="nowrap"> ${vencimiento} </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    {{/if}}
+
+    </div>
+</div>          

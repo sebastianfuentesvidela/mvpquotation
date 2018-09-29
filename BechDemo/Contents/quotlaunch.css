@@ -1,0 +1,161 @@
+﻿        #Text1
+        {
+            width: 41px;
+        }
+        div
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            color: #333333;
+            font-weight: bold;
+        }
+        .embed + img
+        {
+            position: relative;
+            left: -24px;
+            top: 0px;
+        }
+        #sprMontoEquivalente, #sprMonto
+        {
+            font-size: 16px;
+            color: #202060;
+        }
+        td
+        {
+            text-align: left;
+        }
+        #Text2
+        {
+            width: 107px;
+        }
+        .rojo
+        {
+            color: maroon;
+        }
+        .titulopanel
+        {
+            font-family: Monospace, Arial, Helvetica, sans-serif;
+            color: #333333;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        input
+        {
+            margin-left: 10px;
+            width: 23px;
+            font-weight: bold;
+            color: #202060;
+        }
+        .sangria
+        {
+            margin-left: 10px;
+            font-weight: bold;
+            color: #202060;
+        }
+        body
+        {
+            background-color: #F0F0F0;
+        }
+        .style1
+        {
+            width: 135px;
+        }
+        .centrado
+        {
+            text-align: center;
+            font-weight: bold;
+        }
+        .numero
+        {
+            text-align: right;
+            font-weight: bold;
+        }
+        .positive-integer
+        {
+            text-align: right;
+            font-weight: bold;
+        }
+        #cmdSimular
+        {
+            margin: 10px;
+        }
+        input[type="image"]
+        {
+            margin: 5px;
+        }
+        #forCliente
+        {
+            font: normal 12px/18px "Lucida Grande" , Verdana;
+            padding: 3px;
+            border: 1px solid #ddd;
+            width: 600px;
+        }
+        #listaClientes
+        {
+            font: bold 12px Arial, Verdana;
+            padding: 3px;
+        }
+        #listaClientes a:link, a:visited {
+			text-decoration: none;
+		}
+        #listaClientes a:hover {
+			text-decoration: none;
+			color: Maroon;
+		}
+        .modal
+        {
+            max-width: 600px;
+        }
+        @media print
+        {    
+            form, .no-print, .no-print *
+            {
+                display: none !important;
+            }
+        }
+    .dato {
+        padding: 1px 3px 1px 3px;
+        border: solid 1px black;
+        margin-left: 10px;
+        font-weight: bold;
+        color: #202060;
+        background-color: #FFFFCC;
+        white-space: nowrap;
+    }
+    .outerdiv 
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        background-color: #EEEEEE;
+    }
+    .outerdiv table 
+    {
+        width: 100%;
+    }
+    .outerdiv table th
+    {
+        background-color: #ffffff; 
+        text-align:center;
+    }
+    .outerdiv table td
+    {
+        vertical-align: top;
+    }
+    pre {
+        padding: 1px 3px 1px 3px;
+        border: solid 1px black;
+        margin-left: 10px;
+        color: #202060;
+        background-color: #FFFFCC;
+    }
+    .scan {
+        padding: 1px 3px 1px 3px;
+        border: solid 1px black;
+        margin-left: 10px;
+        color: #202060;
+        background-color: #FFFFCC;
+        width: auto;
+        white-space: normal;
+    }
+

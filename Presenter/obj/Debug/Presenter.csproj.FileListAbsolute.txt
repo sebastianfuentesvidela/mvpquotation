@@ -1,0 +1,35 @@
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Presenter\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Presenter\obj\Debug\Presenter.dll
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Presenter\obj\Debug\Presenter.pdb
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Presenter\bin\Debug\Presenter.dll
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Presenter\bin\Debug\Presenter.pdb
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Presenter\bin\Debug\IStockView.dll
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Presenter\bin\Debug\Modelos.dll
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Presenter\bin\Debug\StockBO.dll
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Presenter\bin\Debug\Vistas.dll
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Presenter\bin\Debug\Vistas.pdb
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Presenter\bin\Debug\StockBO.pdb
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Presenter\bin\Debug\Modelos.pdb
+C:\Users\3dgroup\Documents\_2017\MVP2k8\MVPStockSample\MVPStockSample\Presenter\bin\Debug\IStockView.pdb
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Presenter\bin\Debug\Presenter.dll
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Presenter\bin\Debug\Presenter.pdb
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Presenter\bin\Debug\Modelos.dll
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Presenter\bin\Debug\Vistas.dll
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Presenter\bin\Debug\Vistas.pdb
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Presenter\bin\Debug\Modelos.pdb
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Presenter\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Presenter\obj\Debug\Presenter.dll
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Presenter\obj\Debug\Presenter.pdb
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Presenter\bin\Debug\Tools.dll
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Presenter\bin\Debug\Tools.pdb
+C:\Sites\MVPQuotation\Presenter\bin\Debug\Presenter.dll
+C:\Sites\MVPQuotation\Presenter\bin\Debug\Presenter.pdb
+C:\Sites\MVPQuotation\Presenter\bin\Debug\Modelos.dll
+C:\Sites\MVPQuotation\Presenter\bin\Debug\Tools.dll
+C:\Sites\MVPQuotation\Presenter\bin\Debug\Vistas.dll
+C:\Sites\MVPQuotation\Presenter\bin\Debug\Modelos.pdb
+C:\Sites\MVPQuotation\Presenter\bin\Debug\Vistas.pdb
+C:\Sites\MVPQuotation\Presenter\bin\Debug\Tools.pdb
+C:\Sites\MVPQuotation\Presenter\obj\Debug\ResolveAssemblyReference.cache
+C:\Sites\MVPQuotation\Presenter\obj\Debug\Presenter.dll
+C:\Sites\MVPQuotation\Presenter\obj\Debug\Presenter.pdb

@@ -1,0 +1,10 @@
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Tools\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Tools\bin\Debug\Tools.dll
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Tools\bin\Debug\Tools.pdb
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Tools\obj\Debug\Tools.dll
+C:\Users\3dgroup\Documents\Visual Studio 2008\Projects\MVPQuotation\Tools\obj\Debug\Tools.pdb
+C:\Sites\MVPQuotation\Tools\bin\Debug\Tools.dll
+C:\Sites\MVPQuotation\Tools\bin\Debug\Tools.pdb
+C:\Sites\MVPQuotation\Tools\obj\Debug\ResolveAssemblyReference.cache
+C:\Sites\MVPQuotation\Tools\obj\Debug\Tools.dll
+C:\Sites\MVPQuotation\Tools\obj\Debug\Tools.pdb
